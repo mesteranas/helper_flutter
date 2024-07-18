@@ -1,15 +1,1 @@
-{
-    "navigation menu":"قائمة التنقل",
-    "contect us":"تواصل معنا",
-    "donate":"تبرع",
-    "visite project on github":"زيارة المشروع على github",
-    "license":"الترخيص",
-    "error":"خطأ",
-    "about":"مساعدة",
-    "version: ":"الاصدار :",
-    "developer:":"المطور:",
-    "description:":"الوصف:",
-    "settings":"الإعدادات",
-    "general settings":"الإعدادات العامة",
-    "language":"اللغة"
-}
+{"an error detected": "حدث خطأ", "ask helperAI": "اسأل helperAI", "message": "الرسالة", "helperAI is writing a message": "helperAI يكتب رسالة", "send": "إرسال", "camera": "الكاميرا", "turn flash off": "تعطيل ضوء الفلاش", "turn flash on": "تفعيل ضوء الفلاش", "switch camera": "تبديل الكميرا", "take photo": "إلتقات صورة", "contect us": "تواصل معنا", "helperAI": "", "ask helperAI about this image": "اسأل helperAI عن هذه الصورة", "describing ... please wait": "جاري الوصف ... يرجى الانتظار", "navigation menu": "قائمة التنقل", "settings": "الإعدادات", "donate": "تبرع", "visite project on github": "زيارة المشروع على github", "license": "الترخيص", "error": "خطأ", "about": "حول", "version: ": "الإصدار: ", "developer:": "المطور: ", "description:": "الوصف: ", "open image from your device": "فتح صورة من جهازك", "open image from internet": "فتح صورة من الانترنت", "URL": "الرابط", "go": "اذهب", "open Image from internet": "فتح صورة من الانترنت", "general settings": "الإعدادات العامة", "language": "اللغة"}

@@ -49,6 +49,7 @@ class test extends StatefulWidget{
   State<test> createState()=>_test();
 }
 class _test extends State<test>{
+  var _URL=TextEditingController();
   var _=Language.translate;
   StreamSubscription? _intentDataStreamSubscription;
   List<SharedMediaFile>? _sharedFiles;
@@ -149,7 +150,25 @@ setState(() {
           }, child: Text(_("open image from your device"))),
           ElevatedButton(onPressed: (){
             Navigator.push(context, MaterialPageRoute(builder: (context)=>viewCamera()));
-          }, child: Text(_("camera")))
+          }, child: Text(_("camera"))),
+          ElevatedButton(onPressed: (){
+            showDialog(context: context, builder: (context)=>AlertDialog(
+              title: Text(_("open image from internet")),
+              content: Center(
+                child: Column(
+                  children: [
+                    TextFormField(controller: _URL,decoration: InputDecoration(labelText: _("URL")),),
+                    ElevatedButton(onPressed: () async{
+                      var r=await http.get(Uri.parse(_URL.text));
+                      var bts=r.bodyBytes;
+                      Navigator.pop(context);
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>ImageDescriber(file: bts,isFile: false,)));
+                    }, child: Text(_("go")))
+                  ],
+                ),
+              ),
+            ));
+          }, child: Text(_("open Image from internet")))
     ])),));
   }
 }
